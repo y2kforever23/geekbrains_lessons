@@ -1,8 +1,8 @@
-package fizzbuff
+package main
 
 import "fmt"
 
-func Fizzbuff() {
+func main() {
 	for i := 1; i <= 100; i++ {
 		if i%3 == 0 && i%5 == 0 {
 			fmt.Println("FizzBuzz")
@@ -13,7 +13,8 @@ func Fizzbuff() {
 		} else if i%5 == 0 {
 			fmt.Println("Buzz")
 			continue
+		} else {
+			fmt.Println(i)
 		}
-
 	}
 }
